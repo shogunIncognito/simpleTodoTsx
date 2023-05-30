@@ -1,0 +1,65 @@
+.taskContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,
+      minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.task {
+  position: relative;
+  padding: 20px;
+  border: 1px solid transparent;
+  transition: all 0.4s;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.task:hover {
+  border-color: rgba(0, 153, 255, 0.603);
+}
+
+.task h3 {
+  margin-top: 7px;
+}
+
+h2 {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.task span {
+  margin: 0;
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  cursor: pointer;
+  padding: 3px;
+  width: 20px;
+  background-color: transparent;
+  border-radius: 20px;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.task span:hover {
+  background-color: rgba(173, 17, 17, 0.952);
+}
+
+.taskForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.red {
+  color: rgb(255, 0, 0);
+}
+
+.green {
+  color: green;
+}
