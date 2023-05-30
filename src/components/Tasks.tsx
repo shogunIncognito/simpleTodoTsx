@@ -16,7 +16,7 @@ const Tasks: React.FC<Props> = ({ tasks, deleteTask }) => {
                 <div className="task" key={task.id}>
                     <span onClick={() => deleteTask(task.id)}>X</span>
                     <h3>{task.title}</h3>
-                    <p>{task.date.toString()}</p>
+                    <p>{task.date.toLocaleString()}</p>
                 </div>
             ))}
         </div>

@@ -15,7 +15,7 @@ const Form: React.FC<Props> = ({ addTask }) => {
             // maybe an id can be repeated
             id: Math.floor(Math.random() * 9999999) + 1,
             title: task,
-            date: new Date().toLocaleString()
+            date: new Date()
         })
     }
 
